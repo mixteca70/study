@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  background: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+}
+
+.hero-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.lectures {
+  margin-top: 2rem;
+  padding: 0 1rem 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lectures h2 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+.lecture-list {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.lecture-list li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
