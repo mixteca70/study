@@ -42,17 +42,43 @@ body {
   font-size: 1.25rem;
 }
 
-.lecture-list {
-  margin: 0;
-  padding-left: 1.5rem;
+.lecture-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
 }
 
-.lecture-list li {
-  margin-bottom: 0.5rem;
+.lecture-cards .card {
+  margin: 0;
+  padding: 1.25rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.contact {
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid #eee;
+}
+
+.contact h2 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+.contact-item {
+  margin: 0.25rem 0;
 }
 
 @media (max-width: 600px) {
   .hero h1 {
     font-size: 1.5rem;
+  }
+  .lecture-cards {
+    grid-template-columns: 1fr;
   }
 }
